@@ -3,7 +3,7 @@ import React from 'react';
 import RandomItemPicker from '../components/RandomItem';
 import Header from '@/components/Header';
 
-const items = ['Manwah', 'Topping Beef', 'Hadilao'];
+const items = ['Manwah', 'Topping Beef', 'Hadilao', 'Lamb'];
 
 const Home: React.FC = () => {
   return (
