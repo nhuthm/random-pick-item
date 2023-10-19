@@ -5,7 +5,7 @@ import profilePicture from '../app/nhinhut.jpg'; // Import your profile picture 
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-pink p-4 relative">
+    <header className="bg-grey p-4 relative">
     {/* Cover Photo */}
     <div className="h-64 relative rounded-lg overflow-hidden">
         <Image
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
     {/* Profile Picture */}
     <div className="h-20 w-20 bg-white rounded-full border-4 border-primary absolute bottom-4 left-4">
       <Image
-        className="rounded-full"
+        className="rounded-full bg-grey"
         src={profilePicture}
         alt="Profile"
         layout="fixed"
