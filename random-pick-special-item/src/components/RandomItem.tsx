@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import RandomItemModal from './RandomItemModal';
+import Image from 'next/image'
+import dancingCatIcon from '../app/dancingdumpdumpcat.jpeg';
 
 const RandomItemPicker: React.FC<{ items: string[] }> = ({ items }) => {
   const [randomItem, setRandomItem] = useState<string | null>(null);
@@ -16,12 +18,13 @@ const RandomItemPicker: React.FC<{ items: string[] }> = ({ items }) => {
   };
 
   return (
-    <div>
+    <div className='bg-grey flex items-center p-4 my-4 '>
       <button
         onClick={pickRandomItem}
-        className="text-black bg-white px-4 py-2 rounded border border-black hover:bg-black hover:text-white"
+        className="bg-white flex items-center text-black px-4 py-2 rounded border border-black"
       >
-        Please click on this button to see where we should go for dinner
+        <Image src={dancingCatIcon} alt="Dancing Cat" width={94} height={94} className="mr-2" />
+        Click on this button
       </button>
       <RandomItemModal isOpen={modalIsOpen} onRequestClose={closeModal} item={randomItem} />
     </div>

@@ -16,7 +16,8 @@ const config: Config = {
       colors: {
         primary: '#1DA1F2', // Replace with Envelop.us primary color
         secondary: '#ffffff',
-        'pink': '#FF69B4', // Replace with a secondary color
+        'pink': '#FF69B4',
+        'grey': '#808080' // Replace with a secondary color
         // Add more colors as needed
       },
     },
